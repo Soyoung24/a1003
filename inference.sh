@@ -4,9 +4,12 @@
 # Configuraiton
 idir=data/mydata
 odir=./result
-model=exp/exp01a/37epoch.pth_
+model=exp/exp01a/valid.acc.ave_10best.pth
+#model=/home/work/a1003/models/ref3x/exp01a/valid.acc.ave_10best.pth
 nj=8
 # End of Configuraiton
+
+source path.sh
 
 mkdir -p $odir/log
 mdir=$(dirname $model)
